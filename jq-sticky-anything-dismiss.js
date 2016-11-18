@@ -20,20 +20,20 @@
 	function dismissButton() {
 		var $stickyElement = $('.sticky-element-original:not(.sticky-element-active)');
 
-		buttonMargins = 5;
+		buttonMargins = 10;
 
 		if ($stickyElement.length > 0 ) {
 
 			// At this time, the element is sticky
 
 			if( !$('#sticky-element-dismiss-button').length ) {
-				$stickyElement.after('<a id="sticky-element-dismiss-button" href="#">X</a>');
+				$('body').append('<a id="sticky-element-dismiss-button" href="#"></a>');
 			}
 			var stickyPosition = $stickyElement.position();
 
 			stickyLeftPos = stickyPosition.left;
 			stickyTopPos = stickyPosition.top;
-			stickyWidth = $stickyElement.width();
+			stickyWidth = $stickyElement.outerWidth();
 			stickyZ = $stickyElement.css('z-index');
 			stickyMargin = $stickyElement.css('margin-top');
 

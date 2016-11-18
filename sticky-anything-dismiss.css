@@ -13,22 +13,12 @@
 	top:auto !important;
 }
 
-
 a#sticky-element-dismiss-button {
 	display:block;
-	width:24px;
-	height:24px;
-	background:#000000;
-	color:#ffffff;
-	border-radius:50px;
+	width:30px;
+	height:29px;
+	background-image:url('close.png');
 	position:fixed;
-	text-align:center;
-	line-height:24px;
-	border:solid 2px #ffffff;
-	font-weight:bold;
-	font-family:arial,helvetica;
-	font-size:14px;
-	text-decoration:none;
 }
 
 .sticky-element-dismiss-hide {
