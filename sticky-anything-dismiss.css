@@ -21,6 +21,7 @@ a#sticky-element-dismiss-button {
 	position:fixed;
 }
 
-.sticky-element-dismiss-hide {
+.sticky-element-dismiss-hide,
+.sticky-dismiss-button-hide {
 	display:none !important;
 }

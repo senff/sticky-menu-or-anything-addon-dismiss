@@ -5,7 +5,7 @@
 * Plugin URI: http://www.senff.com/plugins/sticky-anything-wp/addon/dismiss-button
 * Requires at least: 3.6
 * Tested up to: 4.7
-* Stable tag: 1.0
+* Stable tag: 0.9
 * License: GPLv2 or later
 * License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,10 +22,10 @@ This add-on plugin adds a "dismiss" button to the element once it becomes sticky
 
 ## Changelog
 
-### 1.0 
+### 0.9
 * Initial release of the add-on
 
 ## Upgrade Notice 
 
-### 1.0
+### 0.9
 * Initial release of the add-on

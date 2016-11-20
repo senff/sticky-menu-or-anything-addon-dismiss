@@ -5,7 +5,7 @@ Plugin URI: http://www.senff.com/plugins/sticky-anything-wp/addon/dismiss-btton
 Description: An add-on for the Sticky Menu (Or Anything) On Scroll plugin that adds a "dismiss" (or "close") button.
 Author: Mark Senff
 Author URI: http://www.senff.com
-Version: 1.0
+Version: 0.9
 */
 
 defined('ABSPATH') or die('INSERT COIN');
