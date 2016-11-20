@@ -1,5 +1,5 @@
 /**
-* @preserve Sticky Menu (or Anything!) on Scroll Add-on: Dismiss Button 0.9 | @senff | GPL2 Licensed
+* @preserve Sticky Menu (or Anything!) on Scroll Add-on: Dismiss Button 1.0 | @senff | GPL2 Licensed
 */
 
 (function($) {
@@ -28,6 +28,24 @@
 		$('#sticky-element-dismiss-button').addClass('sticky-dismiss-button-hide').addClass('sticky-dismiss-button-override');
 	});
 
+	$(window).on('resize',function(r){
+		
+		if( !$('#sticky-element-dismiss-button').hasClass('sticky-dismiss-button-hide')) {
+
+			var $stickyElement = $('.sticky-element-original:not(.sticky-element-active)');
+			var stickyPosition = $stickyElement.position();
+
+			stickyLeftPos = stickyPosition.left;
+			stickyWidth = $stickyElement.outerWidth();
+
+			buttonLeftPos = stickyLeftPos + stickyWidth - $('#sticky-element-dismiss-button').outerWidth() - buttonMargins;
+
+			$('#sticky-element-dismiss-button').css('left',buttonLeftPos);
+
+		}
+
+	});
+
   });
 
 	function dismissButton() {
@@ -50,7 +68,6 @@
 
 				buttonLeftPos = stickyLeftPos + stickyWidth - $('#sticky-element-dismiss-button').outerWidth() - buttonMargins;
 
-				console.log('showing it');
 				$('#sticky-element-dismiss-button').removeClass('sticky-dismiss-button-hide').css('left',buttonLeftPos).css('margin-top',stickyMargin).css('z-index',stickyZ+'0');
 
 			} else {
